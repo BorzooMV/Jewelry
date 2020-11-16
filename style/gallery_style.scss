@@ -7,6 +7,7 @@ $lines: #594630;
 body {
   width: 80%;
   margin: 30px auto;
+  background-color: $backgroundMain;
 }
 
 header {
@@ -46,4 +47,23 @@ header {
   }
 }
 
+.underSlides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
 //MEDIA QUERIES
+@media all and (max-width: 800px) {
+  .underSlides {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 60px;
+    top: 80px;
+  }
+}
