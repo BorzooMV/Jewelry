@@ -1,0 +1,49 @@
+//COLORS
+$backgroundMain: rgba(216, 208, 198, 1);
+$lines: #594630;
+
+//RULES
+
+body {
+  width: 80%;
+  margin: 30px auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  nav {
+    justify-self: end;
+    align-self: end;
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-left: 50px;
+        a {
+          color: $lines;
+          text-decoration: none;
+          transition: all 0.2s ease-in;
+          &:hover {
+            filter: brightness(2);
+            -webkit-filter: brightness(2);
+            color: $lines;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  div {
+    height: 90px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+//MEDIA QUERIES
